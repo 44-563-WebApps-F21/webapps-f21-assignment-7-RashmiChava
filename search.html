@@ -25,48 +25,127 @@
 <body>
 
 <div class="container-fluid">
-  <h1 class="p-4 text-center">Animal hunt Rashmi Chava</h1>
-  <p class="text-center">click on the squares to search for wild life.</p>
-  <p class="text-center" id="tries">Number of triesis zero.</p>
-  <p class="text-center" id="distance">Distance is unknown</p>
-
-  
-
-<div class="image-grid d-flex flex-column justify-content-center align-items-center ">
-    <div class="image-row d-flex">
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-    </div>
-    <div class="image-row d-flex">
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-    </div>
-    <div class="image-row d-flex">
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-    </div>
-    <div class="image-row d-flex">
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
-        <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image"></div>
+    <h1 class="p-4 text-center">Animal hunt Rashmi Chava</h1>
+    <p style="background-color:powderblue;">Click on the squares to search for wild life.</p>
+    <p style="background-color:powderblue;" id="tries">Number of triesis zero.</p>
+    <p style="background-color:powderblue;" id="distance">Distance is unknown</p>
+    
+    <div class="image-grid d-flex flex-column justify-content-center align-items-center ">
+        <div class="image-row d-flex">
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image1"
+                    onclick="check(0)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image2"
+                    onclick="check(1)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image3"
+                    onclick="check(2)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image4"
+                    onclick="check(3)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image5"
+                    onclick="check(4)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image6"
+                    onclick="check(5)"></div>
+        </div>
+        <div class="image-row d-flex">
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image7"
+                    onclick="check(6)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image8"
+                    onclick="check(7)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image9"
+                    onclick="check(8)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image10"
+                    onclick="check(9)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image11"
+                    onclick="check(10)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image12"
+                    onclick="check(11)"></div>
+        </div>
+        <div class="image-row d-flex">
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image13"
+                    onclick="check(12)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image14"
+                    onclick="check(13)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image15"
+                    onclick="check(14)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image16"
+                    onclick="check(15)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image17"
+                    onclick="check(16)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image18"
+                    onclick="check(17)"></div>
+        </div>
+        <div class="image-row d-flex">
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image19"
+                    onclick="check(18)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image20"
+                    onclick="check(19)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image21"
+                    onclick="check(20)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image22"
+                    onclick="check(21)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image23"
+                    onclick="check(22)"></div>
+            <div class="image-col"><img src="images/Plant.jpg" alt="Plant image" class="mw-100 grid-image" id="image24"
+                    onclick="check(23)"></div>
+        </div>
     </div>
 </div>
-  
+<script>
+    let ids = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14", "image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
+    var triesCount = 0;
+    var animalLocation = 13;
+    var id;
+    var aser;
+
+    function check(index) {
+        for (let i = 0; i < ids.length; i++) {
+            if (i == index) {
+                id = ids[i]
+            }
+        }
+        if (index == animalLocation) {
+            document.getElementById(id).src = "images/Animal.jpg";
+        }
+        else {
+            document.getElementById(id).src = "images/Dirt.jpg";
+        }
+        triesCount = triesCount + 1;
+        document.getElementById("tries").innerHTML = "Count of tries is " + triesCount;
+        console.log(index)
+        aser = distance(index, animalLocation)
+        document.getElementById("distance").innerHTML = "Distance is " + aser
+    }
+
+    function distance(pos1, pos2) {
+
+        if (pos1 == pos2) {
+            return 0;
+        }
+        var index = [[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11], [12, 13, 14, 15, 16, 17], [18, 19, 20, 21, 22, 23]];
+
+        var source_x = 0, source_y = 0;
+        var destination_x = 0, destination_y = 0;
+
+        for (var i = 0; i < index.length; i++) {
+            for (var j = 0; j < index[0].length; j++) {
+                if (index[i][j] == pos1) {
+                    source_x = i;
+                    source_y = j;
+                }
+
+                if (index[i][j] == pos2) {
+                    destination_x = i;
+                    destination_y = j;
+                }
+            }
+        }
+
+        var row = Math.abs(source_x - destination_x);
+        var cln = Math.abs(source_y - destination_y);
+        return row + cln - 1;
+
+    }
+
+</script>
 
 </body>
 </html>
