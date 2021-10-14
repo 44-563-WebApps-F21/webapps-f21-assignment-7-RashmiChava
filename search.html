@@ -90,11 +90,12 @@
     </div>
 </div>
 <script>
-    let ids = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14", "image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
-    var triesCount = 0;
-    var animalLocation = 13;
-    var id;
-    var aser;
+        let ids = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14", "image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
+        var triesCount = 0;
+        var animalLocation = 13;
+        var id;
+        var aser;
+
 
     function check(index) {
         for (let i = 0; i < ids.length; i++) {
@@ -116,34 +117,27 @@
     }
 
     function distance(pos1, pos2) {
-
-        if (pos1 == pos2) {
-            return 0;
-        }
-        var index = [[0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11], [12, 13, 14, 15, 16, 17], [18, 19, 20, 21, 22, 23]];
-
-        var source_x = 0, source_y = 0;
-        var destination_x = 0, destination_y = 0;
-
-        for (var i = 0; i < index.length; i++) {
-            for (var j = 0; j < index[0].length; j++) {
-                if (index[i][j] == pos1) {
-                    source_x = i;
-                    source_y = j;
-                }
-
-                if (index[i][j] == pos2) {
-                    destination_x = i;
-                    destination_y = j;
-                }
-            }
-        }
-
-        var row = Math.abs(source_x - destination_x);
-        var cln = Math.abs(source_y - destination_y);
-        return row + cln - 1;
+        pos1 = parseInt(pos1);
+        pos2 = parseInt(pos2);
+        let pos1Row = ~~(pos1/6) + 1;
+        let pos2Row = ~~(pos2/6) + 1;
+        let pos1Col = (pos1%6);
+        let pos2Col = (pos2%6);
+        let horizontalDistance = Math.abs(pos1Row - pos2Row);
+        let verticalDistance = Math.abs(pos1Col - pos2Col);
+        return horizontalDistance > verticalDistance ? horizontalDistance : verticalDistance;
 
     }
+
+    function newGame() {
+            let random = Math.floor(Math.random() * (23 - 0 + 1) + 0);
+            console.log("Animal Position is", random);
+            animalLocation = random;
+            triesEl.innerText = 0;
+            ids.forEach(i => {
+                document.getElementById(i).src = "images/Plant.jpg"
+             })
+     }
 
 </script>
 
