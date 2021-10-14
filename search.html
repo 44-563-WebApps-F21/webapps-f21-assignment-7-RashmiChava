@@ -29,6 +29,7 @@
     <p style="background-color:powderblue;">Click on the squares to search for wild life.</p>
     <p style="background-color:powderblue;" id="tries">Number of triesis zero.</p>
     <p style="background-color:powderblue;" id="distance">Distance is unknown</p>
+    <button onclick="newGame()">Reset</button>
     
     <div class="image-grid d-flex flex-column justify-content-center align-items-center ">
         <div class="image-row d-flex">
@@ -130,13 +131,14 @@
     }
 
     function newGame() {
-            let random = Math.floor(Math.random() * (23 - 0 + 1) + 0);
-            console.log("Animal Position is", random);
-            animalLocation = random;
-            triesEl.innerText = 0;
-            ids.forEach(i => {
-                document.getElementById(i).src = "images/Plant.jpg"
-             })
+        let random = Math.floor(Math.random() * (23 - 0 + 1) + 0);
+        animalLocation = random;
+        document.getElementById("tries").innerHTML = 0;
+        ids.forEach( imageID => {
+        console.log(document.getElementById(imageID))
+        document.getElementById(imageID).src="images/starting-image.jpg"
+        })
+            
      }
 
 </script>
